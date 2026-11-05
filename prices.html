@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelHub — Цены</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body data-page="prices">
+<header>
+  <div class="header-inner">
+    <a id="logo" class="logo" href="index.html">Pixel<span>Hub</span></a>
+    <nav id="main-nav"><a id="nav-home" href="index.html">Главная</a><a id="nav-about" href="about.html">О клубе</a><a id="nav-games" href="games.html">Игры</a><a id="nav-prices" href="prices.html">Цены</a><a id="nav-booking" href="booking.html">Бронирование</a><a id="nav-contacts" href="contacts.html">Контакты</a></nav>
+  </div>
+</header>
+<main>
+<h1 id="page-title">Цены</h1>
+<table id="price-table">
+  <tr><th>Тариф</th><th>Цена за час</th><th>Описание</th></tr>
+  <tr class="tariff-row"><td>Стандарт</td><td>150 ₽</td><td>Место в общем зале</td></tr>
+  <tr class="tariff-row"><td>VIP</td><td>250 ₽</td><td>Место в VIP-зале</td></tr>
+  <tr class="tariff-row"><td>Ночной</td><td>100 ₽</td><td>С 22:00 до 08:00</td></tr>
+</table>
+<h2>Калькулятор</h2>
+<div class="row">
+  <div><label for="tariff">Тариф</label>
+    <select id="tariff">
+      <option value="150">Стандарт — 150 ₽/ч</option>
+      <option value="250">VIP — 250 ₽/ч</option>
+      <option value="100">Ночной — 100 ₽/ч</option>
+    </select></div>
+  <div><label for="hours">Часов</label><input id="hours" type="number" min="1" max="12" value="1"></div>
+  <div><button id="calc-btn" class="btn" type="button">Рассчитать</button></div>
+</div>
+<p id="calc-total" class="result"></p>
+<p><a id="prices-book" class="btn" href="booking.html">Забронировать</a></p>
+</main>
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Игровой клуб PixelHub. Учебный сайт.</span>
+    <a id="footer-sitemap" href="sitemap.html">Карта сайта</a>
+  </div>
+</footer>
+</body>
+</html>

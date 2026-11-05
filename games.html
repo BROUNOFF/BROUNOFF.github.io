@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelHub — Игры</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body data-page="games">
+<header>
+  <div class="header-inner">
+    <a id="logo" class="logo" href="index.html">Pixel<span>Hub</span></a>
+    <nav id="main-nav"><a id="nav-home" href="index.html">Главная</a><a id="nav-about" href="about.html">О клубе</a><a id="nav-games" href="games.html">Игры</a><a id="nav-prices" href="prices.html">Цены</a><a id="nav-booking" href="booking.html">Бронирование</a><a id="nav-contacts" href="contacts.html">Контакты</a></nav>
+  </div>
+</header>
+<main>
+<h1 id="page-title">Игры</h1>
+<label for="genre-filter">Жанр</label>
+<select id="genre-filter">
+  <option value="all">Все</option>
+  <option value="shooter">Шутер</option>
+  <option value="moba">MOBA</option>
+  <option value="sport">Спорт</option>
+  <option value="racing">Гонки</option>
+  <option value="strategy">Стратегия</option>
+</select>
+<p id="games-count">Найдено игр: 8</p>
+<div id="games-list" class="cards"><div class="card game-card" data-genre="shooter"><h3>Counter-Strike 2</h3><div class="genre">Шутер</div></div><div class="card game-card" data-genre="shooter"><h3>Valorant</h3><div class="genre">Шутер</div></div><div class="card game-card" data-genre="shooter"><h3>Apex Legends</h3><div class="genre">Шутер</div></div><div class="card game-card" data-genre="moba"><h3>Dota 2</h3><div class="genre">MOBA</div></div><div class="card game-card" data-genre="moba"><h3>League of Legends</h3><div class="genre">MOBA</div></div><div class="card game-card" data-genre="sport"><h3>EA SPORTS FC 25</h3><div class="genre">Спорт</div></div><div class="card game-card" data-genre="racing"><h3>Forza Horizon 5</h3><div class="genre">Гонки</div></div><div class="card game-card" data-genre="strategy"><h3>StarCraft II</h3><div class="genre">Стратегия</div></div></div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Игровой клуб PixelHub. Учебный сайт.</span>
+    <a id="footer-sitemap" href="sitemap.html">Карта сайта</a>
+  </div>
+</footer>
+</body>
+</html>

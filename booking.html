@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelHub — Бронирование</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body data-page="booking">
+<header>
+  <div class="header-inner">
+    <a id="logo" class="logo" href="index.html">Pixel<span>Hub</span></a>
+    <nav id="main-nav"><a id="nav-home" href="index.html">Главная</a><a id="nav-about" href="about.html">О клубе</a><a id="nav-games" href="games.html">Игры</a><a id="nav-prices" href="prices.html">Цены</a><a id="nav-booking" href="booking.html">Бронирование</a><a id="nav-contacts" href="contacts.html">Контакты</a></nav>
+  </div>
+</header>
+<main>
+<h1 id="page-title">Бронирование</h1>
+<p class="note">Учебная форма: заявки никуда не отправляются.</p>
+<form id="booking-form" novalidate>
+  <label for="name">Имя</label><input id="name" type="text">
+  <label for="phone">Телефон</label><input id="phone" type="tel" placeholder="+79991234567">
+  <label for="booking-tariff">Тариф</label>
+  <select id="booking-tariff"><option>Стандарт</option><option>VIP</option><option>Ночной</option></select>
+  <div id="form-error" class="error"></div>
+  <button id="booking-submit" class="btn" type="submit">Отправить заявку</button>
+</form>
+<div id="booking-success" class="success hidden">
+  <p>Спасибо, <span id="success-name"></span>! Заявка принята, мы перезвоним.</p>
+  <a id="success-home" href="index.html">На главную</a>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Игровой клуб PixelHub. Учебный сайт.</span>
+    <a id="footer-sitemap" href="sitemap.html">Карта сайта</a>
+  </div>
+</footer>
+</body>
+</html>
